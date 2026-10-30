@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8e8f3">
+  <meta name="description" content="Test de personalidad no oficial: descubre qué princesa de Disney vive en ti. 7 preguntas, 12 princesas y un resultado compartible con un enlace. 👑">
+  <title>¿Qué princesa Disney eres? — CORONITA 👑</title>
+
+  <!-- Compartir en redes (Open Graph / Twitter) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://li-future-builder.github.io/coronita/">
+  <meta property="og:title" content="¿Qué princesa Disney eres? — CORONITA 👑">
+  <meta property="og:description" content="7 preguntas para descubrir tu princesa interior. 12 resultados posibles y un enlace para presumirlo. ✨">
+  <meta property="og:image" content="https://li-future-builder.github.io/coronita/assets/logo.png">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Logo -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="shell">
+    <div class="app">
+      <section class="panel" id="intro">
+        <div class="brand">
+          <img class="mark" src="assets/logo.png" alt="Logo de CORONITA">
+          <div><div class="brandname">CORONITA</div><div class="sub">TESTS · PERSONALIDAD · MAGIA</div></div>
+          <div class="pill">Tu era de princesa</div>
+        </div>
+        <div class="kicker">Un test de personalidad no oficial 👑</div>
+        <h1>¿Qué princesa de Disney eres?</h1>
+        <p class="lead">Tu personalidad, tu energía y tu forma de ver el mundo… en versión princesa. No elijas a tu favorita: elige lo que más se parece a ti. 👀</p>
+        <div class="castle" aria-hidden="true"><span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">♡</span><span class="star s4">✦</span>🏰</div>
+        <div class="meta"><span>📝 7 preguntas</span><span>👑 12 princesas</span><span>⏱️ 2 minutos</span><span>💗 Cero juicios</span></div>
+        <button class="btn primary" id="start">Empezar mi era de princesa ✨</button>
+      </section>
+
+      <section class="content" id="quiz" hidden aria-live="polite">
+        <div class="progressrow"><span class="kicker">Descubriendo tu personalidad</span><span id="progressText"></span></div>
+        <div class="track"><div class="fill" id="fill"></div></div>
+        <h2 class="question" id="q"></h2>
+        <p class="note">Elige la respuesta que más se parece a ti 💫</p>
+        <div class="options" id="opts"></div>
+        <div class="nav"><button class="btn secondary" id="back">← Atrás</button><button class="btn primary" id="next" disabled>Siguiente →</button></div>
+        <p class="tiny">No hay respuestas buenas ni malas. ¡Sé tú misma! 💗</p>
+      </section>
+
+      <section class="content result" id="result" hidden aria-live="polite">
+        <p class="kicker">REDOBLE DE TAMBORES… 🥁</p>
+        <img class="princess-img" id="princessImg" src="assets/princesses/rapunzel.png" alt="">
+        <div class="tag" id="tag"></div>
+        <h2 id="name"></h2>
+        <p id="desc"></p>
+        <div class="quote" id="quote"></div>
+        <p id="tie" class="note" hidden></p>
+        <div class="nav" style="flex-direction:column"><button class="btn primary" id="share">Compartir mi resultado ↗</button><button class="btn secondary" id="copy">Copiar mi resultado</button><button class="btn secondary" id="again">Volver a jugar ↻</button></div>
+        <p class="tiny" id="status" role="status"></p>
+        <p class="tiny">Test recreativo, no es una evaluación psicológica validada ni una afiliación oficial a Disney.</p>
+      </section>
+
+      <footer class="footer"><strong>💗 Tu historia, tus reglas</strong><br>No necesitas ser una princesa de cuento para tener una personalidad extraordinaria. Sigue escribiendo tu propia historia.<div class="copyright">CORONITA · BRILLA A TU MANERA ✨</div></footer>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
